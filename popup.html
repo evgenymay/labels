@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      width: 260px;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      padding: 16px;
+      background: white;
+      color: #1e293b;
+    }
+    .domain {
+      font-size: 14px;
+      font-weight: 600;
+      padding: 10px 12px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      word-break: break-all;
+      color: #0f172a;
+    }
+    .domain.empty { color: #94a3b8; font-weight: 400; }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #f59e0b;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    button:hover { background: #d97706; }
+    button:disabled { background: #cbd5e1; cursor: default; }
+  </style>
+</head>
+<body>
+  <div id="domain" class="domain empty">Загрузка...</div>
+  <button id="add-btn" disabled>★ Добавить в метки</button>
+  <script src="popup.js"></script>
+</body>
+</html>

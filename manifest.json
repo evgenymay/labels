@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "LabelS",
+  "version": "1.0",
+  "description": "Персонализация новых вкладок в браузере",
+  "permissions": [
+    "history",
+    "contextMenus",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://favicon.categorization.dev/*",
+    "https://www.google.com/*",
+    "https://*.gstatic.com/*",
+    "https://suggestqueries.google.com/*",
+    "https://suggest.yandex.ru/*",
+    "https://yandex.ru/*",
+    "https://yandex.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Добавить в метки"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  }
+}
